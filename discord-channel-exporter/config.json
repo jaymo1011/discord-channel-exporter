@@ -1,0 +1,21 @@
+﻿{
+  // The token for the Discord bot.
+  // Requires permissions to view & send messages + read message history on all channels you wish to export
+  "token": "",
+
+  // The prefix the bot will search for.
+  "command-prefix": "ch-exporter ",
+
+  // The directories which contain the channel cache and exports
+  "channel-cache-dir": "channelcache/",
+  "channel-export-dir": "exports/",
+
+  // When set to true, all attachments from all cached channels will also be downloaded.
+  "download-attachments": "true",
+
+  // When set to true, an export will also contain all attachments shared across the channels exported.
+  "copy-attachments": "true",
+
+  // When set to true, exports will be sent to the invoker via DM when small enough.
+  "send-exports": "false"
+}

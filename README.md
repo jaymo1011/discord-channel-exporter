@@ -27,7 +27,7 @@ Storing the entire URL of an attachment as `https://cdn.discordapp.com/attachmen
 
 #### Channel Message Cache
 Located at (by default) `channelcache/[channel-snowflake].json`, this file stores the constantly updating *cache* of a channel.
-```json
+```jsonc
 {
 	"channel-snowflake": 771982307170058270, // The snowflake / ID of the channel which this file pertains to
 	"newest-snowflake": 772001142938533898,  // *usually* the most recent message that has been cached
@@ -66,7 +66,7 @@ Located at (by default) `channelcache/[channel-snowflake].json`, this file store
 
 #### Export
 To be even more space efficient for an export bundle of multiple channels, the data of all channels in a bundle is collated and organised in a way which takes up the least amount of space possible.
-```json
+```jsonc
 {
 	// null and default values are ignored on serialization but are displayed in this example for clarity.
 	// Additionally, these counters are only included when specified as this data is redundant.
